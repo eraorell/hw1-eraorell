@@ -46,7 +46,7 @@ compileEnv env (Id x l)         = [IMov (Reg EAX) (RegOffset xn ESP) ]
                 Nothing -> error "variable is out of scope!"
 compileEnv env (Let x e1 e2 l)  = compileEnv env e1 ++ [IMov (RegOffset xn ESP) (Reg EAX)] ++ compileEnv env' e2
     where
-        (xn, env') = pushEnv x env 
+        (xn, env') = pushEnv x env
                                         
 
 --------------------------------------------------------------------------------
@@ -56,7 +56,7 @@ compileEnv env (Let x e1 e2 l)  = compileEnv env e1 ++ [IMov (RegOffset xn ESP) 
 class Repr a where
   repr :: a -> Arg
 
-instance Repr Int wheresudo
+instance Repr Int where
   repr n = Const (fromIntegral n)
 
 instance Repr Integer where
