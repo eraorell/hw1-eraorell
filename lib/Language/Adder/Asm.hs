@@ -28,14 +28,16 @@ header = unlines
 instrAsm :: Instruction -> Text
 --------------------------------------------------------------------------------
 instrAsm (IMov dst val) = printf "  mov %s, %s"  (argAsm dst) (argAsm val)
-instrAsm (IAdd dst val) = error  "TBD"
+instrAsm (IAdd dst val) = printf "  add %s, %s"  (argAsm dst) (argAsm val)
 instrAsm IRet           =        "  ret"
 
 regAsm :: Reg -> Text
 regAsm EAX = "eax"
-regAsm ESP = error "TBD"
+regAsm ESP = "esp"
 
 argAsm :: Arg -> Text
 argAsm (Const n)       = printf "%d" n
 argAsm (Reg r)         = regAsm r
-argAsm (RegOffset n r) = error "TBD"
+argAsm (RegOffset n r) = 
+    if 0 <= n then printf "[%s + %d]" (regAsm r) n
+    else printf "[%s - %d]" (regAsm r) (0 - n)
