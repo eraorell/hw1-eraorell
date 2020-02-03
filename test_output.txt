@@ -1,0 +1,226 @@
+FAIL:    instructor-test-0
+  expectied : 15
+  got      : nasm -f elf32 -o tests/output/instructor-test-0.o tests/output/instructor-test-0.s
+clang -g -m32 -o tests/output/instructor-test-0.run c-bits/main.c tests/output/instructor-test-0.o
+./limit.sh 5 500 50 tests/output/instructor-test-0.run > tests/output/instructor-test-0.result
+./limit.sh: line 19: 79154 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-0.result' failed
+make: *** [tests/output/instructor-test-0.result] Error 139
+rm tests/output/instructor-test-0.run tests/output/instructor-test-0.o
+
+FAIL:    instructor-test-1
+  expectied : 26
+  got      : nasm -f elf32 -o tests/output/instructor-test-1.o tests/output/instructor-test-1.s
+clang -g -m32 -o tests/output/instructor-test-1.run c-bits/main.c tests/output/instructor-test-1.o
+./limit.sh 5 500 50 tests/output/instructor-test-1.run > tests/output/instructor-test-1.result
+./limit.sh: line 19: 79168 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-1.result' failed
+make: *** [tests/output/instructor-test-1.result] Error 139
+rm tests/output/instructor-test-1.o tests/output/instructor-test-1.run
+
+FAIL:    instructor-test-2
+  expectied : 123
+  got      : nasm -f elf32 -o tests/output/instructor-test-2.o tests/output/instructor-test-2.s
+clang -g -m32 -o tests/output/instructor-test-2.run c-bits/main.c tests/output/instructor-test-2.o
+./limit.sh 5 500 50 tests/output/instructor-test-2.run > tests/output/instructor-test-2.result
+./limit.sh: line 19: 79182 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-2.result' failed
+make: *** [tests/output/instructor-test-2.result] Error 139
+rm tests/output/instructor-test-2.o tests/output/instructor-test-2.run
+
+FAIL:    instructor-test-3
+  expectied : 321
+  got      : nasm -f elf32 -o tests/output/instructor-test-3.o tests/output/instructor-test-3.s
+clang -g -m32 -o tests/output/instructor-test-3.run c-bits/main.c tests/output/instructor-test-3.o
+./limit.sh 5 500 50 tests/output/instructor-test-3.run > tests/output/instructor-test-3.result
+./limit.sh: line 19: 79196 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-3.result' failed
+make: *** [tests/output/instructor-test-3.result] Error 139
+rm tests/output/instructor-test-3.run tests/output/instructor-test-3.o
+
+FAIL:    instructor-test-4
+  expectied : 0
+  got      : nasm -f elf32 -o tests/output/instructor-test-4.o tests/output/instructor-test-4.s
+clang -g -m32 -o tests/output/instructor-test-4.run c-bits/main.c tests/output/instructor-test-4.o
+./limit.sh 5 500 50 tests/output/instructor-test-4.run > tests/output/instructor-test-4.result
+./limit.sh: line 19: 79210 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-4.result' failed
+make: *** [tests/output/instructor-test-4.result] Error 139
+rm tests/output/instructor-test-4.run tests/output/instructor-test-4.o
+
+FAIL:    instructor-test-5
+  expectied : -1
+  got      : nasm -f elf32 -o tests/output/instructor-test-5.o tests/output/instructor-test-5.s
+clang -g -m32 -o tests/output/instructor-test-5.run c-bits/main.c tests/output/instructor-test-5.o
+./limit.sh 5 500 50 tests/output/instructor-test-5.run > tests/output/instructor-test-5.result
+./limit.sh: line 19: 79224 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-5.result' failed
+make: *** [tests/output/instructor-test-5.result] Error 139
+rm tests/output/instructor-test-5.o tests/output/instructor-test-5.run
+
+FAIL:    instructor-test-6
+  expectied : 0
+  got      : nasm -f elf32 -o tests/output/instructor-test-6.o tests/output/instructor-test-6.s
+clang -g -m32 -o tests/output/instructor-test-6.run c-bits/main.c tests/output/instructor-test-6.o
+./limit.sh 5 500 50 tests/output/instructor-test-6.run > tests/output/instructor-test-6.result
+./limit.sh: line 19: 79238 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-6.result' failed
+make: *** [tests/output/instructor-test-6.result] Error 139
+rm tests/output/instructor-test-6.run tests/output/instructor-test-6.o
+
+FAIL:    instructor-test-7
+  expectied : -2
+  got      : nasm -f elf32 -o tests/output/instructor-test-7.o tests/output/instructor-test-7.s
+clang -g -m32 -o tests/output/instructor-test-7.run c-bits/main.c tests/output/instructor-test-7.o
+./limit.sh 5 500 50 tests/output/instructor-test-7.run > tests/output/instructor-test-7.result
+./limit.sh: line 19: 79252 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-7.result' failed
+make: *** [tests/output/instructor-test-7.result] Error 139
+rm tests/output/instructor-test-7.run tests/output/instructor-test-7.o
+
+FAIL:    instructor-test-8
+  expectied : 1
+  got      : nasm -f elf32 -o tests/output/instructor-test-8.o tests/output/instructor-test-8.s
+clang -g -m32 -o tests/output/instructor-test-8.run c-bits/main.c tests/output/instructor-test-8.o
+./limit.sh 5 500 50 tests/output/instructor-test-8.run > tests/output/instructor-test-8.result
+./limit.sh: line 19: 79266 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-8.result' failed
+make: *** [tests/output/instructor-test-8.result] Error 139
+rm tests/output/instructor-test-8.o tests/output/instructor-test-8.run
+
+FAIL:    instructor-test-9
+  expectied : 6
+  got      : nasm -f elf32 -o tests/output/instructor-test-9.o tests/output/instructor-test-9.s
+clang -g -m32 -o tests/output/instructor-test-9.run c-bits/main.c tests/output/instructor-test-9.o
+./limit.sh 5 500 50 tests/output/instructor-test-9.run > tests/output/instructor-test-9.result
+./limit.sh: line 19: 79280 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-9.result' failed
+make: *** [tests/output/instructor-test-9.result] Error 139
+rm tests/output/instructor-test-9.run tests/output/instructor-test-9.o
+
+FAIL:    instructor-test-10
+  expectied : 69
+  got      : nasm -f elf32 -o tests/output/instructor-test-10.o tests/output/instructor-test-10.s
+clang -g -m32 -o tests/output/instructor-test-10.run c-bits/main.c tests/output/instructor-test-10.o
+./limit.sh 5 500 50 tests/output/instructor-test-10.run > tests/output/instructor-test-10.result
+./limit.sh: line 19: 79294 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-10.result' failed
+make: *** [tests/output/instructor-test-10.result] Error 139
+rm tests/output/instructor-test-10.o tests/output/instructor-test-10.run
+
+FAIL:    instructor-test-11
+  expectied : 3
+  got      : nasm -f elf32 -o tests/output/instructor-test-11.o tests/output/instructor-test-11.s
+clang -g -m32 -o tests/output/instructor-test-11.run c-bits/main.c tests/output/instructor-test-11.o
+./limit.sh 5 500 50 tests/output/instructor-test-11.run > tests/output/instructor-test-11.result
+./limit.sh: line 19: 79308 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-11.result' failed
+make: *** [tests/output/instructor-test-11.result] Error 139
+rm tests/output/instructor-test-11.o tests/output/instructor-test-11.run
+
+FAIL:    instructor-test-12
+  expectied : -2
+  got      : nasm -f elf32 -o tests/output/instructor-test-12.o tests/output/instructor-test-12.s
+clang -g -m32 -o tests/output/instructor-test-12.run c-bits/main.c tests/output/instructor-test-12.o
+./limit.sh 5 500 50 tests/output/instructor-test-12.run > tests/output/instructor-test-12.result
+./limit.sh: line 19: 79322 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-12.result' failed
+make: *** [tests/output/instructor-test-12.result] Error 139
+rm tests/output/instructor-test-12.o tests/output/instructor-test-12.run
+
+FAIL:    instructor-test-13
+  expectied : 420
+  got      : nasm -f elf32 -o tests/output/instructor-test-13.o tests/output/instructor-test-13.s
+clang -g -m32 -o tests/output/instructor-test-13.run c-bits/main.c tests/output/instructor-test-13.o
+./limit.sh 5 500 50 tests/output/instructor-test-13.run > tests/output/instructor-test-13.result
+./limit.sh: line 19: 79336 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-13.result' failed
+make: *** [tests/output/instructor-test-13.result] Error 139
+rm tests/output/instructor-test-13.run tests/output/instructor-test-13.o
+
+FAIL:    instructor-test-14
+  expectied : 14
+  got      : nasm -f elf32 -o tests/output/instructor-test-14.o tests/output/instructor-test-14.s
+clang -g -m32 -o tests/output/instructor-test-14.run c-bits/main.c tests/output/instructor-test-14.o
+./limit.sh 5 500 50 tests/output/instructor-test-14.run > tests/output/instructor-test-14.result
+./limit.sh: line 19: 79350 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-14.result' failed
+make: *** [tests/output/instructor-test-14.result] Error 139
+rm tests/output/instructor-test-14.run tests/output/instructor-test-14.o
+
+FAIL:    instructor-test-15
+  expectied : 1
+  got      : nasm -f elf32 -o tests/output/instructor-test-15.o tests/output/instructor-test-15.s
+clang -g -m32 -o tests/output/instructor-test-15.run c-bits/main.c tests/output/instructor-test-15.o
+./limit.sh 5 500 50 tests/output/instructor-test-15.run > tests/output/instructor-test-15.result
+./limit.sh: line 19: 79364 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-15.result' failed
+make: *** [tests/output/instructor-test-15.result] Error 139
+rm tests/output/instructor-test-15.run tests/output/instructor-test-15.o
+
+FAIL:    instructor-test-16
+  expectied : 21
+  got      : nasm -f elf32 -o tests/output/instructor-test-16.o tests/output/instructor-test-16.s
+clang -g -m32 -o tests/output/instructor-test-16.run c-bits/main.c tests/output/instructor-test-16.o
+./limit.sh 5 500 50 tests/output/instructor-test-16.run > tests/output/instructor-test-16.result
+./limit.sh: line 19: 79378 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-16.result' failed
+make: *** [tests/output/instructor-test-16.result] Error 139
+rm tests/output/instructor-test-16.o tests/output/instructor-test-16.run
+
+FAIL:    instructor-test-17
+  expectied : Unbound variable x
+  got      : adder: variable is out of scope!
+CallStack (from HasCallStack):
+  error, called at lib/Language/Adder/Compiler.hs:46:28 in adder-0.1.0.0-L7LA1htGvGq8t0Q5arHWnU:Language.Adder.Compiler
+
+FAIL:    instructor-test-18
+  expectied : 4
+  got      : nasm -f elf32 -o tests/output/instructor-test-18.o tests/output/instructor-test-18.s
+clang -g -m32 -o tests/output/instructor-test-18.run c-bits/main.c tests/output/instructor-test-18.o
+./limit.sh 5 500 50 tests/output/instructor-test-18.run > tests/output/instructor-test-18.result
+./limit.sh: line 19: 79397 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-18.result' failed
+make: *** [tests/output/instructor-test-18.result] Error 139
+rm tests/output/instructor-test-18.run tests/output/instructor-test-18.o
+
+FAIL:    instructor-test-19
+  expectied : 5
+  got      : nasm -f elf32 -o tests/output/instructor-test-19.o tests/output/instructor-test-19.s
+clang -g -m32 -o tests/output/instructor-test-19.run c-bits/main.c tests/output/instructor-test-19.o
+./limit.sh 5 500 50 tests/output/instructor-test-19.run > tests/output/instructor-test-19.result
+./limit.sh: line 19: 79411 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/instructor-test-19.result' failed
+make: *** [tests/output/instructor-test-19.result] Error 139
+rm tests/output/instructor-test-19.run tests/output/instructor-test-19.o
+
+SUCCESS: forty_one
+
+FAIL:    nyi
+  expectied : 10
+  got      : nasm -f elf32 -o tests/output/nyi.o tests/output/nyi.s
+clang -g -m32 -o tests/output/nyi.run c-bits/main.c tests/output/nyi.o
+./limit.sh 5 500 50 tests/output/nyi.run > tests/output/nyi.result
+./limit.sh: line 19: 79439 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/nyi.result' failed
+make: *** [tests/output/nyi.result] Error 139
+rm tests/output/nyi.run tests/output/nyi.o
+
+SUCCESS: five
+
+SUCCESS: adds
+
+SUCCESS: subs
+
+FAIL:    lets
+  expectied : 14
+  got      : nasm -f elf32 -o tests/output/lets.o tests/output/lets.s
+clang -g -m32 -o tests/output/lets.run c-bits/main.c tests/output/lets.o
+./limit.sh 5 500 50 tests/output/lets.run > tests/output/lets.result
+./limit.sh: line 19: 79495 Segmentation fault      "$@"
+Makefile:39: recipe for target 'tests/output/lets.result' failed
+make: *** [tests/output/lets.result] Error 139
+rm tests/output/lets.run tests/output/lets.o
+
+SUCCESS: lets-unb
+
